@@ -1,0 +1,328 @@
+html,
+body {
+   height: 100%;
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+   --azul-forte: #0d0233;
+   --azul-escuro: #0510aa;
+   --azul-marinho: #071563;
+   --rosa: rgb(235, 12, 142);
+   --roxo: #42045f;
+   --branco: white;
+}
+
+.rosa {
+   color: var(--rosa);
+}
+
+/*Menu*/
+
+.menu {
+   background: var(--azul-forte);
+   width: 100%;
+   height: 70px;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+
+}
+
+.menu img {
+   height: 45px;
+}
+
+.menu ul {
+   display: flex;
+   justify-content: space-around;
+   width: 600px;
+}
+
+.menu ul li {
+   list-style-type: none;
+
+}
+
+.menu ul li a {
+   text-decoration: none;
+   color: var(--branco);
+   font-weight: 800;
+
+}
+
+/*Home*/
+
+#home {
+   height: calc(100vh - 70px);
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: var(--azul-forte);
+}
+
+#home.texto-container {
+   height: 100%;
+   width: 50%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: flex-start;
+   padding-left: 10%;
+
+}
+
+#home .texto-container h1 {
+   font-size: 50px;
+   color: var(--branco);
+}
+
+#home .texto-container p {
+   font-size: 20px;
+   color: var(--branco);
+   max-width: 400px;
+   margin-top: 10px;
+}
+
+#home .texto-container button {
+   height: 50px;
+   width: 200px;
+   border-radius: 30px;
+   background: transparent;
+   border: 2px solid var(--branco);
+   font-size: 16px;
+   color: var(--branco);
+   margin-top: 40px;
+}
+
+#home .img-container {
+   height: 100%;
+   width: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+}
+
+#home .img-container img {
+   width: 80%;
+
+}
+
+/*Sobre*/
+
+#sobre {
+   height: 600px;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background: var(--azul-forte);
+}
+
+#sobre .img-container {
+   height: 100%;
+   width: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+#sobre .img-container img {
+   width: 90%;
+   max-width: 400px;
+}
+
+#sobre .texto-container {
+   height: 100%;
+   width: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: flex-start;
+   flex-direction: column;
+   padding: 10%;
+}
+
+#sobre .texto-container h2 {
+   font-size: 40px;
+   color: var(--branco);
+}
+
+#sobre .texto-container p {
+   color: var(--branco);
+   max-width: 500px;
+   margin-top: 10px;
+   font-size: 18px;
+
+}
+
+/*Encontar*/
+
+#encontrar {
+   height: 600px;
+   width: 100%;
+   background: var(--branco);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+
+#encontrar h2 {
+   font-size: 40px;
+   color: var(--azul-escuro);
+   margin-bottom: 30px;
+}
+
+#encontrar .encontrar-container {
+   width: 100%;
+   height: 400px;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   max-width: 900px;
+}
+
+#encontrar .box-encontrar {
+   height: 250px;
+   width: 200px;
+   border-radius: 10px;
+   background: linear-gradient(to right bottom, var(--azul-forte), var(--azul-forte));
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   cursor: pointer;
+   box-shadow: 0 0 20px #09142f9d;
+   padding: 10px;
+}
+
+#encontrar .box-encontrar:hover {
+   transition: .2s;
+   box-shadow: 0 0 25px var(--azul-escuro);
+}
+
+#encontrar .box-encontrar img {
+   height: 60px;
+}
+
+#encontrar .box-encontrar h4 {
+   color: var(--rosa);
+   margin: 15px 0;
+}
+
+
+#encontrar .box-encontrar p {
+   text-align: center;
+   color: var(--branco);
+   font-size: 16px;
+}
+
+/*Contato*/
+
+#contato {
+   height: 100vh;
+   width: 100%;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   background-color: var(--azul-forte);
+}
+
+#contato .astronauta-container {
+   width: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+
+#contato .astronauta-container img:nth-of-type(1) {
+   width: 80%;
+   max-width: 400px;
+}
+
+#contato .astronauta-container img:nth-of-type(2) {
+   width: 60%;
+   max-width: 300px;
+
+}
+#contato .formulario-container{
+   width: 50%;
+   height: auto;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+#contato .formulario-container h2 {
+   font-size:  40px;
+   color: var(--branco);
+}
+
+#contato .formulario-container p {
+   font-size: 16px;
+   color: var(--branco);
+   margin: 10px 0 20px 0;
+   text-align: center;
+}
+
+form{
+   width: 90%;
+   max-width: 400px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+form input, textarea {
+   height: 35px;
+   width: 100%;
+   border-radius: 20px;
+   font-size: 16px;
+   padding-left: 10px;
+   border: none;
+   margin: 10px 0;
+   outline: none;
+}
+
+form textarea {
+   height: 100px;
+   padding-top: 10px;
+   resize: none;
+}
+
+form button {
+   width: 200px;
+   height: 35px;
+   border-radius: 20px;
+   border: none;
+   color: var(--branco);
+   font-weight: 600;
+   margin: 10px;
+   background: linear-gradient(to bottom, var(--rosa), var(--roxo));
+}
+
+/*Footer*/
+
+footer{
+   height: 50px;
+   width: 100%;
+   background: var(--azul-forte);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+footer p {
+   color: var(--branco);
+}
