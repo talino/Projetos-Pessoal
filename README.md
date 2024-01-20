@@ -1,0 +1,1 @@
+Como entusiasta e estudante de Ciência da Computação, venho desenvolvendo uma série de projetos pessoais para aprimorar minhas habilidades de programação e aplicar conceitos teóricos em contextos práticos. Meus projetos abrangem diversas áreas, desde a implementação de algoritmos e estruturas de dados até o desenvolvimento de soluções web.
